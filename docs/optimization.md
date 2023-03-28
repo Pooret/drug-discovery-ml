@@ -1,1 +1,0 @@
-Documentation explaning the optimization algorithm
