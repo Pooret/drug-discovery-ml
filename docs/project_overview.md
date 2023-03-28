@@ -1,9 +1,8 @@
 # Project Overview: Optimizing Synthetic Pathways with Deep Learning
-## Introduction
 
 ## Project Goals and Scope
 
-## Title: Drug Discovery and Design using Machine Learning Models
+### Drug Discovery and Design using Machine Learning Models
 
 **Goal**: The primary goal of this project is to develop and validate machine learning models that can predict the bioactivity, toxicity, and pharmacokinetic properties of candidate molecules for drug discovery and design. The models will aid in the identification and prioritization of promising drug candidates, accelerating the drug discovery process and reducing the associated costs and time.
 
