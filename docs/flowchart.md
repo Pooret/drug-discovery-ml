@@ -1,28 +1,22 @@
 graph TD
+    A[Data Collection] --> B[Data Preprocessing]
+    B --> C[Ligand-based Virtual Screening]
+    B --> D[Structure-based Virtual Screening]
+    C --> F[Model Development - Molecular Similarity]
+    D --> G[Model Development - Molecular Docking]
+    D --> H[Model Development - Pharmacophore Modeling]
+  
+    F --> J[Model Validation - Molecular Similarity]
+    G --> K[Model Validation - Molecular Docking]
+    H --> L[Model Validation - Pharmacophore Modeling]
 
-A[Project Goals and Scope] --> B[Data Collection]
-B --> C[Data Preprocessing]
-
-C --> D[Training, Validation, and Test Data Split]
-
-D --> E1[Ligand-Based Models]
-D --> E2[Structure-Based Models]
-D --> E3[Multi-Task Models]
-
-E1 --> F1[Model Training and Validation: Ligand-Based]
-E2 --> F2[Model Training and Validation: Structure-Based]
-E3 --> F3[Model Training and Validation: Multi-Task]
-
-F1 --> G[Model Comparison and Selection]
-F2 --> G
-F3 --> G
-
-G --> H[Model Fine-tuning and Testing]
-H --> I[Virtual Screening]
-
-I --> J[Hit Identification and Prioritization]
-J --> K[Hit-to-Lead Optimization]
-K --> L[Lead Optimization]
-
-L --> M[Model Validation and Performance Evaluation]
-M --> N[Project Conclusion and Future Work]
+    J --> N[Optimized Molecular Similarity Model]
+    K --> O[Optimized Molecular Docking Model]
+    L --> P[Optimized Pharmacophore Model]
+    N --> Q[Consensus Scoring and Ranking]
+    O --> Q
+    P --> Q
+    Q --> R[Hit Identification and Prioritization]
+    R --> S[Hits and Lead Compounds]
+    S --> T[Hit-to-Lead and Lead Optimization]
+    
